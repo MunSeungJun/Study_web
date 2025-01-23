@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            
+        }
+
+        .input_id,
+        .input_pw {
+            position: relative;
+
+        }
+
+        .input_id input,
+        .input_pw input {
+            height: 3rem;
+            width: 300px;
+            text-indent: 0.5rem;
+        }
+
+        .input_id label,
+        .input_pw label {
+            position: absolute;
+            font-size: 1rem;
+            top: 0;
+            left: 0;
+            margin-top: 1.25rem;
+            margin-left: 0.5rem;
+            color: #666;
+            transition: all 0.2s ease-out;
+        }
+        #user_id, #user_pw{
+            padding-top: 0.75rem;
+            font-size: 1.25rem;
+            outline: none;
+            border: 1px solid #666;
+        }
+        .login_box{
+            border-collapse: collapse;
+        }
+        #user_id{
+            border-top-right-radius: 0.3rem;
+            border-top-left-radius: 0.3rem;
+        }
+       
+        #user_pw{
+            border-bottom-right-radius: 0.3rem;
+            border-bottom-left-radius: 0.3rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="login_box">
+            <div class="input_id">
+                <input type="text" id="user_id" name="user_id">
+                <label for="user_id" class="id_label">아이디 또는 전화번호</label>
+            </div>
+            <div class="input_pw">
+                <input type="password" id="user_pw" name="user_pw">
+                <label for="user_pw" class="pw_label">비밀번호</label>
+            </div>
+        </div>
+    </form>
+    <script>
+        
+        const inputId = document.querySelector(".input_id");
+        const userId = inputId.querySelector("#user_id")
+        const idLabel = inputId.querySelector(".id_label")
+        
+        userId.addEventListener("focus", () => {
+            idLabel.style.fontSize = "0.5rem";
+            idLabel.style.marginTop = "0.5rem";
+            userId.style.borderColor = "rgb(3, 199, 90)";
+        })
+        userId.addEventListener("blur", () => {
+            idLabel.style.fontSize = "1rem";
+            idLabel.style.marginTop = "1.25rem";
+            userId.style.borderColor = "#666";
+        })
+        
+        const inputPw = document.querySelector(".input_pw");
+        const userPw = inputPw.querySelector("#user_pw")
+        const pwLabel = inputPw.querySelector(".pw_label")
+        
+        userPw.addEventListener("focus", () => {
+            pwLabel.style.fontSize = "0.5rem";
+            pwLabel.style.marginTop = "0.5rem";
+            userPw.style.borderColor = "rgb(3, 199, 90)";
+        })
+        userPw.addEventListener("blur", () => {
+            pwLabel.style.fontSize = "1rem";
+            pwLabel.style.marginTop = "1.25rem";
+            userPw.style.borderColor = "#666";
+        })
+    </script>
+</body>
+
+</html>
