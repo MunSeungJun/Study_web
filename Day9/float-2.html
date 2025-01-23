@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0
+        }
+        div{
+            padding: 50px;
+        }
+        .header{
+            background-color: gold;
+            height: 80px;
+        }
+        .column-left{
+            background: orange;
+            width: 30%;
+            margin-right: 1%;
+            float: left;
+            height: 500px;
+        }
+        .main {
+            overflow: hidden;
+        }
+        .column-right{
+            background: red;
+            width: 20%;
+            float: right;
+            height: 300px;
+        }
+        .column-center{
+            background: aqua;
+            width: 30%;
+            height: 400px;
+            float: left;
+        }
+        .footer{
+            background: blue;
+        }
+        .clear{
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>float 레이아웃 실습</h1>
+    <div class="header">header</div>
+    <div class="main">
+        <div class="column-left">column-left</div>
+        <div class="column-center">column-center</div>
+        <div class="column-right">column-rigth</div>
+    </div>
+    <div class="footer clear">footer</div>
+</body>
+</html>
