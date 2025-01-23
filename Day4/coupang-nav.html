@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쿠팡 뎁스 내비게이션</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>쿠팡</h1>
+        <button class="border categori d-flex direction-column content-center items-center my-1 btn">
+          <span class="material-symbols-outlined">menu</span>
+          <p>카테고리</p>
+          
+        </button>
+      </div>
+      <div>
+        <nav class="nav_main border d-flex display-none">
+          <ul>
+            <li>
+              <a href="#" class="item"><span class="material-symbols-outlined">apparel</span>패션의류</a>
+            </li>
+            <li>
+              <a href="#"
+                ><span class="material-symbols-outlined">nutrition</span> 식품</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="material-symbols-outlined">menu_book</span> 도서</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="material-symbols-outlined">kitchen</span>
+                주방용품</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="material-symbols-outlined">mop</span> 생활용품</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav_sub border display-none">
+          <ul>
+            <li><a href="#">여성패션</li>
+            <li><a href="#">남성패션</li>
+            <li><a href="#">유아동패션</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+  <script>
+    const categori = document.querySelector(".categori")
+    const nav_main = document.querySelector(".nav_main")
+    let nav_categori = false 
+    categori.addEventListener("mouseover", function()  {
+      if (!nav_categori) {
+        nav_main.style.display = "block"
+        nav_categori = true
+      }
+    })
+    categori.addEventListener("blur", function() {
+      if (nav_categori) {
+        nav_main.style.display = "none"
+        nav_categori = false
+      }
+    })
+    const item = document.querySelector(".item")
+    const nav_sub = document.querySelector(".nav_sub")
+    let nav_item = false
+    item.addEventListener("mouseover", function(){
+      if (!nav_item) {
+        nav_sub.style.display = "block"
+        nav_item = true
+      } else {
+        nav_sub.style.display = "none"
+        nav_item = false        
+      }
+    })
+  </script>
+</html>

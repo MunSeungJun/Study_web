@@ -1,0 +1,30 @@
+@charset "urf-8";
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 1rem;
+}
+
+th {
+    padding: 10px 0;
+}
+
+.d-flex {
+    display: flex;
+}
+.direction-column{
+    flex-direction: column;
+}
+.content-start{
+    justify-content: flex-start;
+}
+.content-center{
+    justify-content: center;
+}
+.items-start{
+    align-items: flex-start;
+}

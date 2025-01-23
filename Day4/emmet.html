@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmet 실습</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Element 요소</li>
+        <li>Nesting Operator 중첩 연산자
+            <ul>
+                <li>Child : &gt; </li>
+                <li>Sibling : + </li>
+                <li>Climb-Up : ^ </li>
+                <li>Multiplication : * </li>
+                <li>Grouping : () </li>
+            </ul>
+        </li>
+        <li>Attribute Operator 속성 연산자
+            <ul>Id and Class : . # </ul>
+            <ul>Custom Attribute : [] </ul>
+            <ul>Item Numbering : $ </ul>
+        </li>
+        <li>Text : {} </li>
+    </ul>
+
+    nav.main_nav>ul>li*5>a[href=#]
+
+    div#header+div.page+div#footer.class1.class2.class3
+
+    ul>li*5>a[href=#]{naver}
+</body>
+</html>
