@@ -1,0 +1,17 @@
+@charset "utf=8";
+
+body {
+    background-color: navy
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    width: 300px;
+    height: 200px;
+}
+.vertical-align{
+    vertical-align: super;
+}
