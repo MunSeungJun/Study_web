@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamJeju-galary</title>
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @font-face {
+      font-family: "STUNNING-Bd";
+      src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/STUNNING-Bd.woff2")
+        format("woff2");
+      font-weight: normal;
+      font-style: normal;
+    }
+    .merienda {
+      font-family: "Merienda", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a,
+    h2,
+    h3 {
+      font-family: "STUNNING-Bd";
+    }
+    img{
+        width: 300px;
+        height: 200px;
+    }
+    header {
+      background-color: rgb(189, 189, 219);
+      padding: 2rem;
+    }
+    .d-flex {
+      display: flex;
+    }
+    .content-center {
+      justify-content: center;
+    }
+    .content-between {
+      justify-content: space-between;
+    }
+    .items-center {
+      align-items: center;
+    }
+    .items-end {
+      align-items: flex-end;
+    }
+    .direction-column {
+      flex-direction: column;
+    }
+    .direction-row {
+      flex-direction: row;
+    }
+    .m1 {
+      margin: 1rem;
+    }
+    .mx-auto {
+      margin: 0 auto;
+    }
+    .my-1 {
+      margin: 1rem 0;
+    }
+    .m-bottom-1 {
+      margin-bottom: 1rem;
+    }
+    .p1 {
+      padding: 1rem;
+    }
+    .gap-1 {
+      gap: 1rem;
+    }
+    .gap-2 {
+      gap: 2rem;
+    }
+    .logo {
+      color: white;
+      font-size: 2.5rem;
+    }
+    .container {
+      width: 1000px;
+    }
+    .btn {
+      padding: 0.5rem;
+    }
+    .btn-call {
+      background-color: rgb(145, 141, 141);
+    }
+    .btn-call:hover {
+      color: black;
+    }
+    .btn-reservation {
+      background-color: rgb(189, 189, 219);
+    }
+    .btn-reservation:hover {
+      color: black;
+    }
+    .border-radius {
+      border-radius: 10px;
+    }
+    .border-thin {
+        border: 1px solid #ddd;
+    }
+    .call,
+    .calendar {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    #like {
+        background-color: white;
+        border: none;
+    }
+    #activity {
+      background-color: rgb(224, 220, 220);
+    }
+  </style>
+  <body>
+    <header class="d-flex gap-1 items-end content-between">
+      <div class="logo marck-script-regular">
+        <a href="http://192.168.0.32:5500/index.html">Dream Jeju</a>
+      </div>
+      <nav>
+        <ul class="d-flex gap-2">
+          <li><a href="#">단체 여행</a></li>
+          <li><a href="#">맞춤 여행</a></li>
+          <li><a href="#">갤러리</a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container mx-auto">
+          <ul>
+            <div class="d-flex gap-2 m1">
+              <li class="border-thin">
+                <img src="public/hamduck.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>함덕해수욕장</h2>
+                    <p>4.5<button id="like" onclick="changeLike()">🤍</button>(12k)</p>
+                </div>
+              </li>
+              <li class="border-thin">
+                <img src="public/manjang.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>만장굴</h2>
+                    <p>4.2❤ (12k)</p>
+                </div>
+              </li>
+              <li class="border-thin">
+                <img src="public/hanlim.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>한림공원</h2>
+                    <p>4.4🤍 (5.9k)</p>
+                </div>
+              </li>
+            </div>
+            <div class="d-flex gap-2 m1">
+              <li class="border-thin">
+                <img src="public/wudo.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>우도</h2>
+                    <p>4.4🤍 (382)</p>
+                </div>
+              </li>
+              <li class="border-thin">
+                <img src="public/dongmun.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>동문재래시장</h2>
+                    <p>4.1❤ (1.4k)</p>
+                </div>
+              </li>
+              <li class="border-thin">
+                <img src="public/julmool.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>제주절물자연휴향림</h2>
+                    <p>4.6❤ (6.6k)</p>
+                </div>
+              </li>
+            </div>
+            <div class="d-flex gap-2 m1">
+              <li class="border-thin">
+                <img src="public/museum.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>아르떼뮤지엄 제주</h2>
+                    <p>4.4❤ (6.4k)</p>
+                </div>
+              </li>
+              <li class="border-thin">
+                <img src="public/9.81park.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>9.81 파크</h2>
+                    <p>4.4❤ (4k)</p>
+                </div>
+              </li>
+              <li class="border-thin">
+                <img src="public/kam.jpg" alt="" />
+                <div class="d-flex content-between my-1">
+                    <h2>캄녕미로공원</h2>
+                    <p>4.2🤍  (3.9k)</p>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <div class="d-flex gap-1 items-center content-center">
+        <div class="logo-bottom">
+          <img src="public/dreamjeju_logo.png" alt="드림제주" />
+        </div>
+        <div>
+          <ul class="d-flex gap-1 my-1">
+            <li>개인정보책임자: 홍길동</li>
+            <li>사업자등록번호: 12345679</li>
+            <li>연락처: 010-9999-9999</li>
+            <li>이메일: abc@dreamjeju.com</li>
+          </ul>
+          <div>
+            <p>copyright (c) dreamJeju. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const likeBtn = document.querySelector("#like")
+    likeBtn.addEventListener("click", function() {
+      
+    })
+  </script>
+</html>
