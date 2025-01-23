@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media screen and (max-width:425px) {
+    
+
+    #checkBtn{
+        background-color: #03c75a;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+        
+        height: 40px;
+    }
+    
+    .phone_number_box{
+        width: 160px;
+    }
+    .phone_number_box input{
+        width: 60px;
+    }
+}

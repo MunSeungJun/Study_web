@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+.flex-basis {
+    flex-basis: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 1rem;
+}
+
+.page_title {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+.main_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.sub_container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+#loginBtn{
+    background-color: #03c75a;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+}
+#signBtn{
+    background-color: #666;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+}
+
+#checkBtn {
+    background-color: #03c75a;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+
+.phone_number_all {
+    width: 320px;
+}
+
+.phone_number_box {
+    width: 200px;
+}
+
+.phone_number_box input {
+    width: 100px;
+}
+
+.sub_nav {
+    background-color: black;
+    padding: 0.5rem;
+}
+
+.sub_nav a {
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+}
+
+.phone {
+    font-size: 20px;
+    color: #03c75a;
+}
+
+.info {
+    font-size: 13px;
+    color: #999;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+}
+
+
+/* 로그인 박스*/
+.input_id,
+.input_pw {
+    position: relative;
+}
+.input_id input,
+.input_pw input {
+    height: 4rem;
+    text-indent: 0.5rem;
+}
+.input_id label,
+.input_pw label {
+    position: absolute;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    margin-top: 1.25rem;
+    margin-left: 0.5rem;
+    color: #666;
+    transition: all 0.1s ease-out;
+}
+#user_id,
+#user_pw {
+    padding-top: 0.75rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: 1px solid #666;
+}
+#user_id {
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+#user_pw {
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
