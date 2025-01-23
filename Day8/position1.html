@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 레이아웃 실습</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            font-size: 17px;
+        }
+        body{
+            height: 5000px;
+        }
+        .static{
+            position: static;
+        }
+        .relative-1{
+            position: relative;
+        }
+        .relative-2{
+            position: relative;
+        }
+        .absolute{
+            position: absolute;
+            
+        }
+        .fixed{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+            
+        }
+        p{
+            background-color: gray;
+            border: 1px solid black;
+        }
+        #parent_box{
+            background-color: gold;
+            border: 1px solid red;
+            width: 500px;
+            height: 400px;
+            margin: 1rem;
+        }
+        #child_box{
+            width: 200px;
+            height: 200px;
+            background-color: dodgerblue;
+            top: 200px;
+            left: 250px;
+            margin-left: -100px;
+            margin-top: -100px;
+        }
+        #popup{
+            position: absolute;
+            background-color: orange;
+            top: 100px;
+            left: 100px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="static">Lorem ipsum dolor sit amet.</p>
+    <p class="relative-1">Lorem ip
+        sum dolor sit amet.</p>
+    <div class="relative-2" id="parent_box">
+        <div class="absolute" id="child_box">상자1</div> 
+        Lorem ipsum dolor sit amet.
+    </div>
+    <p class="absolute" id="popup">Lorem ipsum dolor sit amet.
+        <button id="close_btn">닫기</button>
+    </p>
+    <p class="fixed" id="go_top"><span class="material-symbols-outlined">search</span>
+    </p>
+    <p class="sticky">Lorem ipsum dolor sit amet.</p>
+    
+    <script src="position1.js"></script>
+</body>
+</html>
