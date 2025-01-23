@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱 태그 연습</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <div class="header_top d-flex content-between">
+            <div>
+                <a href="#"><img src="/public/pay_image.png" alt="메뉴"></a>
+                <a href="#"><img src="/public/pay_image.png" alt="페이"></a>
+            </div>
+            <div>
+                <a href="#"><img src="/public/pay_image.png" alt="톡"></a>
+                <a href="#"><img src="/public/pay_image.png" alt="알림"></a>
+                <a href="#"><img src="/public/pay_image.png" alt="쇼핑"></a>
+            </div>
+        </div>
+        <div class="header_mid d-flex content-around gap-1 m1">
+            <div>
+                <a href="#"><img src="" alt="광고임"></a>
+            </div>
+            <div class="d-flex search border-green border-radius items-center content-around">
+                <img src="/public/naver_image.png" alt="" class="image">
+                <input type="text" id="user_input">
+                <img src="/public/search_image.png" alt="" class="image">
+            </div>
+            <div>
+                <a href="#"><img src="" alt="광고임"></a>
+            </div>
+        </div>
+        <nav class="header_bottom d-flex gap-1 content-center m1">
+            <div>
+                <a href="#" class="d-flex direction-column items-center"><img src="/public/mail_image.png" alt="메일">메일</a>
+            </div>
+            <div>
+                <a href="#" class="d-flex direction-column items-center"><img src="/public/mail_image.png" alt="카페">카페</a>
+            </div>
+            <div>
+                <a href="#" class="d-flex direction-column items-center"><img src="/public/mail_image.png" alt="블로그">블로그</a>
+            </div>
+            <div>
+                <a href="#" class="d-flex direction-column items-center"><img src="/public/mail_image.png" alt="스토어">스토어</a>
+            </div>
+            <div>
+                <a href="#" class="d-flex direction-column items-center"><img src="/public/mail_image.png" alt="뉴스">뉴스</a>
+            </div>
+            <div>
+                <a href="#" class="d-flex direction-column items-center"><img src="/public/mail_image.png" alt="치지직">치지직</a>
+            </div>
+            <div>
+                <a href="#" class="d-flex direction-column items-center blind"><img src="/public/mail_image.png" alt="바로가기">blind</a>
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex container mx-auto gap-1">
+        <div class="d-flex gap-1 direction-column">
+            <div class="d-flex border border-radius banner content-center">
+                <img src="/public/ad-image.PNG" alt="">
+            </div>
+            <div class="d-flex news border border-radius content-center">
+                <img src="/public/news_image.png" style="width: 800px;" alt="">
+            </div>
+        </div>
+        <div class="d-flex direction-column gap-1">
+            <div class="d-flex direction-column border border-radius content-center login gap-1">
+                <div class="d-flex direction-column">
+                    <p class="text-center">네이버를 더 안전하고 편리하게 이용하세요</p>
+                    <button id="loginBtn">NAVER 로그인</button>
+                </div>
+                <div class="d-flex content-around"><a href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR"> 아이디 찾기</a><span> | </span><a href="#"> 비밀번호 찾기</a><span> |
+                    </span><a href="#"> 회원가입</a></div>
+            </div>
+            <div class="d-flex border border-radius content-center">
+                <img src="/public/ad2-image.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        const loginBtn = document.querySelector("#loginBtn")
+        loginBtn.addEventListener("click", () => {
+            location.href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+        }) 
+    </script>
+</body>
+</html>

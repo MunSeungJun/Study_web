@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my bookmark</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-body d-flex flex-column gap-1 border-radius ">
+            <label>북마크 이름 <input type="text" class="input-width"></label>
+            <label>북마크 주소 <input type="text" class="input-width"></label>
+            <div>
+                <button id="cancerBtn" class="border-radius btn1">취소</button>
+                <input type="submit" class="border-radius btn2" style="padding: 0;" value="완료">
+            </div>
+        </div>
+    </div>
+    <h1 class="text-capitalize text-center">my bookmark list</h1>
+    <div class="d-flex gap-2 content-center text-center">
+        <div class="border">
+            <h2 class="text-capitalize">naver</h2>
+            <p>네이버</p>
+            <a href="https://www.naver.com/"><img class="logo border-radius" src="public/naver_logo.jpg" alt="네이버"></a>
+        </div>
+        <div class="border">
+            <h2 class="text-capitalize">google</h2>
+            <p>구글</p>
+            <a href="https://www.google.com/?hl=ko"><img class="logo border-radius" src="public/google_logo.png"
+                    alt="구글"></a>
+        </div>
+        <div class="border">
+            <h2 class="text-capitalize">git hub</h2>
+            <p>깃허브</p>
+            <a href="https://github.com/"><img class="logo border-radius" src="public/git_logo.jpg" alt="깃허브"></a>
+        </div>
+    </div>
+    <div class="d-flex content-center m1 gap-1">
+        <button id="backBtn" class="border-radius btn1">돌아가기</button>
+        <button id="addBtn" class="border-radius btn2">추가하기</button>
+    </div>
+    <script>
+        const backBtn = document.querySelector("#backBtn")
+        backBtn.addEventListener("click", () => {
+            location.href = "http://192.168.0.32:5500/html-css.html"
+        })
+        const addBtn = document.querySelector("#addBtn")
+        const modal = document.querySelector(".modal")
+        addBtn.addEventListener("click", () => {
+            modal.style.display = "flex"
+        })
+        const cancerBtn = document.querySelector("#cancerBtn")
+        cancerBtn.addEventListener("click", () => {
+            modal.style.display = "none"
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aquaText {
+            color: aqua
+        }
+
+        #blueText {
+            color: blue;
+        }
+
+        #box {
+            border: 1px dashed #cecece;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body id="box">
+    <h1>Hello Html</h1>
+    <h2>Hello Html</h2>
+    <h3>Hello Html</h3>
+    <h4>Hello Html</h4>
+    <h5 class="aquaText">Hello Html</h5>
+    <h6 id="blueText">Hello Html</h6>
+    <button id="bookmarkBtn">북마크 리스트</button>
+    <script>
+        const bookmarkBtn = document.querySelector("#bookmarkBtn")
+        bookmarkBtn.addEventListener("click", () => {
+            location.href = "http://192.168.0.32:5500/my-bookmark.html"
+        })
+    </script>
+</body>
+
+</html>
