@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/mobile.css">
+</head>
+<body>
+    <header>
+        <div class="logo d-flex content-center my-1">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="hero_img d-flex content-end">
+            <div class="site_model">
+                <img src="images/model.png" alt="">
+            </div>
+        </div>
+        <ul class="header_nav d-flex content-center gap-2 pd-1 bg-black text-white">
+            <li><a href="http://192.168.0.32:5500/SNL_web/SNL_about.html">SNL소개</a></li>
+            <li><a href="http://192.168.0.32:5500/SNL_web/SNL.html">요금안내</a></li>
+            <li><a href="#">금주베스트</a></li>
+            <li><a href="http://192.168.0.32:5500/SNL_web/SNL_faq.html">고객센터</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2 class="text-center my-2">자주묻는질문<br> FAQ</h2>
+        <p class="faq d-flex content-between  my-1">Q. 방청신청은 어떻게 합니까? <span><button id="infoBtn" class="border-none bg-white">🔽</button></span></p>
+        <div class="faq_info d-flex bg-color2">
+            <p>A. 방청신청은 정해진 날짜에, 선착순 무작위 추점으<br>로 진행하며 온라인 회원가입후...</p>
+        </div>
+    </main>
+    <footer>
+        <ul class="links d-flex content-center gap-1 pd-1 bg-color3 text-light">
+            <li><a href="#">SNL소개</a></li>
+            <li><a href="#">입장료안내</a></li>
+            <li><a href="#">출연진보기</a></li>
+            <li><a href="#">공지사항</a></li>
+        </ul>
+        <div class="bg-black text-white pd-1">
+            <div class="footer-logo d-flex content-center">
+                <img src="images/footer-logo.png" alt="">
+            </div>
+            <div class="info text-center text-dark my-2">
+                <p class="address text13">광주광역시 서구 경열로3 한울직업전문학교 3층 302호</p>
+                <p class="copyright text12 text-capitalize">copyright &copy; 2017 snl all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const infoBtn = document.querySelector("#infoBtn")
+        const faqInfo = document.querySelector(".faq_info")
+        let faqState = false
+        infoBtn.addEventListener("click", () => {
+            if (!faqState) {
+                faqInfo.style.display = "flex"
+                faqState = true
+            } else {
+                faqInfo.style.display = "none"
+                faqState = false
+            }
+        })
+    </script>
+</body>
+</html>

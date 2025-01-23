@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+    margin: 0;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 600px;
+    margin: 0 auto;
+}
+caption{
+    font-size: 18px;
+    font-weight: bold;
+}
+th, td{
+    padding: 1rem;
+    text-align: center;
+}
+th{
+    background-color: #f7f7f7;
+    width: inherit;
+    font-size: 15px;
+}
+
+/* -------------------- */
+
+.d-flex{
+    display: flex;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.gap-3{
+    gap: 3rem;
+}
+.content-center{
+    justify-content: center;
+}
+.content-between{
+    justify-content: space-between;
+}
+.content-around{
+    justify-content: space-around;
+}
+.content-end{
+    justify-content: flex-end;
+}
+.items-center{
+    align-items: center;
+}
+.items-end{
+    align-items: flex-end;
+}
+.direction-col{
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 2rem 0;
+}
+.my-3{
+    margin: 3rem 0;
+}
+.pd-1{
+    padding: 1rem;
+}
+.pd-2{
+    padding: 2rem;
+}
+.pd-3{
+    padding: 3rem;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-color1{
+    background-color: #ffeded;
+}
+.bg-color2{
+    background-color: #f7f7f7;
+}
+.bg-color3{
+    background-color: #FAFAFA;
+}
+.bg-color4{
+    background-color: orange;
+}
+.bg-color5{
+    background-color: rgb(241, 84, 27);
+}
+.text-white{
+    color: white;
+}
+.text-light{
+    color: #666;
+}
+.text-dark{
+    color: #999;
+}
+.text20{
+    font-size: 20px;
+}
+.text13{
+    font-size: 13px;
+}
+.text12{
+    font-size: 12px;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+.width25{
+    width: 25%;
+}
+.width10{
+    width: 10%;
+}
+.width15{
+    width: 15%;
+}
+.border-none{
+    border: none;
+}
+
+/*  ---------------------     */
+
+.hero_img{
+    background-image: url(../images/visual-wide.png);
+    height: 335px;
+    background-position: 0 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_nav a:hover{
+    color: #01ccff;
+    font-weight: bold;
+}
+
+#about_tbl{
+    height: 998px;
+}
+.age_image{
+    width: 20px;
+    height: 20px;
+}
+.faq{
+    width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.faq_info{
+    display: none;
+    width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.faq_info p {
+    font-size: inherit;
+}
