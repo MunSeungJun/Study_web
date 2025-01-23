@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+:root{
+    --primary-text-color: #eb89dd;
+    --secondary-text-color: #d075c3;
+    --large-text-color: 20px;
+    --medium-text-color: 18px;
+    --small-text-color: 15px;
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+hr{
+    background-color: var(--secondary-text-color);
+    border: 0;
+    height: 1px;
+}
+body{
+    background-image: url(pat.png);
+}
+
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.flex-1{
+    flex: 1;
+}
+.content-center{
+    justify-content: center;
+}
+.content-between{
+    justify-content: space-between;
+}
+.content-around{
+    justify-content: space-around;
+}
+.direction-column{
+    flex-direction: column;
+}
+.items-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.gap-3{
+    gap: 3rem;
+}
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 2rem 0;
+}
+.mx{
+    margin: 0;
+}
+.mx-bottom{
+    margin-bottom: 0;
+}
+
+.main_nav{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: var(--large-text-color);
+    text-transform: capitalize;
+}
+.new{
+    font-size: var(--medium-text-color);
+    text-transform: capitalize;
+}
+.new_items img{
+    max-width: 100%;
+    height: auto;
+}
+.brand{
+    font-size: var(--small-text-color);
+    text-transform: capitalize;
+    border: 1px solid black;
+    width: 300px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.delivery{
+    font-size: var(--medium-text-color);
+    text-transform: capitalize;
+}
+.copyright{
+    background-color: gray;
+}
+.phone{
+    font-size: var(--large-text-color);
+    color: var(--secondary-text-color);
+    font-style: italic;
+}
+
+.item-title{
+    font-size: var(--large-text-color);
+}
+.item-link{
+    padding: 1rem;
+}
+
+.sales-price{
+    font-size: var(--medium-text-color);
+}
+.even{
+    height: 200px;
+    width: 600px;
+    margin: 2rem auto;
+}
+.item-link:hover{
+    border: 1px solid black;
+}

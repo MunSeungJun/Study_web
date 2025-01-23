@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@media screen and (max-width:425px) {
+    nav{
+        background-color: rgb(144, 98, 121);
+        color: pink;
+    }
+    nav ul {
+        padding: 10px 0;
+    }
+    .hero_image img{
+        max-width: 100%;
+        height: auto;
+    }
+    .brand{
+        width: 60%;
+        letter-spacing: 5px;
+    }
+    .copyright p{
+        font-size: .5rem;
+    }
+    .phone {
+        font-size: .75rem;
+    }
+}
+@media screen and (max-width:375px) {
+    nav{
+        background-color: rgb(0, 0, 0);
+        color: pink;
+    }
+    nav ul {
+        padding: 10px 0;
+    }
+    .hero_image img{
+        max-width: 100%;
+        height: auto;
+    }
+}
