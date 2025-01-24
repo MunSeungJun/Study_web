@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1rem;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+th{
+    width: 150px;
+    background-color: #e5e1e1;
+}
+table{
+    border-top: 3px solid black;
+}
+
+
+.header_links{
+    background-color: #f5f5f5;
+}
+.header_links a{
+    color: black;
+    padding: 1rem;
+
+}
+.header_links a:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu{
+    font-size: 0.875rem;
+    border: 1px solid #cccccc;
+}
+.menu:hover{
+    border-color: black;
+    font-weight: bold;
+}
+.footer_links a{
+    color: white;
+}
+.footer_links a:hover{
+    color: gray
+}
+.join{
+    background-color: #ffea00;
+}
+.join h2{
+    font-size: 2.5rem;
+}
+.join p{
+    font-size: 1rem;
+}
+.screen_out{
+    position: absolute;
+    font-size: 0;
+}
+
+#signup_form{
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+#member_type_tbl, #info_tbl{
+    width: 100%;
+}
+
+.btn1, .btn2{
+    font-size: 1.5rem;
+    padding: 0.25rem 1.5rem
+}
+.btn1{
+    background-color: rgb(200, 200, 251);
+}
