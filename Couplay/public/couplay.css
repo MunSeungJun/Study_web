@@ -88,3 +88,9 @@ table{
 .btn1{
     background-color: rgb(200, 200, 251);
 }
+.btn3{
+    background-color: #5a5a5a;
+    color: white;
+    border: 0;
+    padding: 0.5rem 0.75rem;
+}
