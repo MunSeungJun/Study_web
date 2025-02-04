@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>조건문</h1>
+    <h2>조건문의 종류</h2>
+    <h3>if 조건문</h3>
+    <ul>
+        <li>단순 if</li>
+        <li>if ~ else</li>
+        <li>if else if</li>
+    </ul>
+    <h3>삼항 연산자</h3>
+    <p>조건식 ? true : false</p>
+
+    <h2>조건문 예시</h2>
+    <script>
+        if ( 3 < 4 ) {
+            console.log("4가 더 크다")
+        }
+
+        if ( 5 < 4 ) {
+            console.log("4가 더 크다")
+        } else {
+            console.log("5가 더 크다")
+        }
+
+        console.log(3<4 ? "4가 더 크다": "3이 더 크다")
+
+        let userInput = prompt("숫자를 하나 입력해보세요")
+
+        if (userInput % 3 == 0) {
+            document.write(`${userInput} :3의 배수입니다`)
+        } else {
+            document.write(`${userInput} :3의 배수가 아닙니다`)
+        }
+    </script>
+</body>
+</html>

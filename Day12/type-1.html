@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자료형이란?</h1>
+    <p>컴퓨터가 처리할 수 있는 자료의 형태</p>
+
+    <h2>자바스크립트 자료형의 종류</h2>
+    <dl>
+        <dt>원시유형</dt>
+        <dd>
+            <ul>
+                <li>숫자형(number) : 정수, 실수</li>
+                <li>문자열(string) : 큰따옴표나 작은따옴표로 묶은 문자</li>
+                <li>논리형(boolean) : 참, 거짓
+                    <p></p>
+                </li>
+            </ul>
+        </dd>
+        <dt>복합유형</dt>
+        <dd>
+            <ul>
+                <li>배열(array) : 하나의 변수에 여러가지 값을 저장</li>
+                <li>객체(object) : 함수와 속성을 저장</li>
+            </ul>
+        </dd>
+        <dt>특수유형</dt>
+        <dd>
+            <ul>
+                <li>언디파인트(undefined) : 변수를 선언했지만, 초기화되지 않은 상태</li>
+                <li>널(null) : 값이 유효하지 않은 상태</li>
+            </ul>
+        </dd>
+    </dl>
+    <h2>템플릿 리터럴 예제</h2>
+    <script>
+        let name = prompt("당신의 이름은?")
+        let classroom = prompt("몇호실을 방문하실건가요?")
+        document.write(`<h2><span class="name-label">${name}</span>님, <span class="class-label">${classroom}</span>호 강의실로 입장하세요</h2>`)
+    </script>
+</body>
+</html>

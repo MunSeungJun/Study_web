@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <p>데이터를 여러개 저장하는 자료형</p>
+    <h2>예제</h2>
+    <script>
+        let season = ["봄", "여름", "가을", "겨울"]
+        let season_eng = new Array("spring", "summer", "autumn", "winter")
+        console.log(season, typeof season)
+        console.log(typeof season[0])
+        console.log(typeof season_eng)
+
+        // 배열 + 반복 => for of
+        for (let seasons of season) {
+            document.write(`한국의 계절은 ${seasons}이 있습니다</br>`)
+        }
+    </script>
+</body>
+</html>

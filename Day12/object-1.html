@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>객체</h1>
+    <p>객체는 함수와 속성을 포함한다</p>
+
+    <h2>객체 선언</h2>
+    <code>
+        <pre>
+            //리터럴
+
+            const ogb = {}
+
+            //생성자
+
+            const obj2 = new Object({})
+        </pre>
+    </code>
+    <h2>객체 실습</h2>
+    <script>
+        let student = {
+            name : "홍길동",
+            age : 32,
+            job : "학생"
+        }
+        
+        // 배열 표기법
+        console.log(student["name"])
+
+        // 객체 표기법
+        console.log(student.job)
+
+        // 객체 + 반복문 => for in
+        for(let field in student) {
+            console.log(student[field])
+        }
+    </script>
+</body>
+</html>
