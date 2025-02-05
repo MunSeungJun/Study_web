@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.w-500 {
+    width: 500px;
+}
+
+label{
+    width: 150px;
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%
+}
+
+/* .d-none{
+    display: none;
+} */
