@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+form, fieldset {
+    border: 0;
+}
+legend {
+    display: none;
+}
+ul{
+    list-style: none;
+}
+
+.flex-1{
+    flex:1
+}
+
+.btn{
+    padding: 1rem 2rem;
+    background-color: dodgerblue;
+    color: white;
+}
+[type="reset"]{
+    background-color: rgb(225, 139, 139)
+}
+.d-none{
+    display: none;
+}
+.box{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+#result{
+    display: grid;
+}
