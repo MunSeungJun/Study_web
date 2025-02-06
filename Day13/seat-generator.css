@@ -17,7 +17,6 @@ ul{
 .flex-1{
     flex:1
 }
-
 .btn{
     padding: 1rem 2rem;
     background-color: dodgerblue;
@@ -31,9 +30,9 @@ ul{
 }
 .box{
     border: 1px solid black;
-    border-collapse: collapse;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
 }
 #result{
     display: grid;
+    grid-gap: 0.5rem;
 }
