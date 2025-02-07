@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #plate{
+            position: relative;
+        }
+        #green_plate{
+            background-color: green;
+            position: absolute;
+            min-height: 200px;
+            min-width: 500px;
+        }
+        #orange_plate{
+            background-color: orange;
+            min-height: 200px;
+            position: absolute;
+            min-width: 500px;
+        }
+        #purple_plate{
+            background-color: purple;
+            min-height: 200px;
+            position: absolute;
+            min-width: 500px;
+        }
+        .top {
+            z-index: 10 !important
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Green</button>
+    <button id="btn2">Orange</button>
+    <button id="btn3">Purple</button>
+    <div id="plate">
+        <div id="green_plate" >q</div>
+        <div id="orange_plate" >w</div>
+        <div id="purple_plate" >e</div>
+    </div>
+    <script src="event-1.js"></script>
+</body>
+</html>
