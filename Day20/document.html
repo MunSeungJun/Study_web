@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">문서 객체</h1>
+    <h2>document object</h2>
+    <p class="bright">테스트1</p>
+    <p class="bright">테스트2</p>
+    <p class="bright">테스트3</p>
+    <img src="https://picsum.photos/200/300" alt="" />
+    <img src="https://picsum.photos/200/300" alt="" />
+    <img src="https://picsum.photos/200/300" alt="" />
+    
+    <script>
+        let heading = document.getElementById("heading")
+
+        let bright = document.getElementsByClassName("bright")
+
+        let images = document.getElementsByTagName("img")
+        console.log(images, typeof images)
+    </script>
+</body>
+</html>
