@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>버블링</h1>
+
+    <div class="outside">밖
+        <div class="inside">안
+            <div class="content">내용</div>
+        </div>
+    </div>
+    <script>
+        const outside = document.querySelector(".outside")
+        const inside = document.querySelector(".inside")
+        const content = document.querySelector(".content")
+
+        outside.addEventListener("click", ()=> {
+            console.log("out")
+        })
+        inside.addEventListener("click", ()=> {
+            console.log("in")
+        })
+        content.addEventListener("click", (e)=> {
+            e.stopPropagation()
+            console.log("content")
+        })
+    </script>
+</body>
+</html>
