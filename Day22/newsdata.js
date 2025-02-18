@@ -13,12 +13,19 @@ newsForm.addEventListener("submit", (e)=>{
 async function getData(keword) {
     const request_url = `https://newsdata.io/api/1/latest?apikey=${newsdata_api}&q=${keword}`
     const response = await fetch(request_url)
-    // const jsonData = response.results
+    const jsonData = await response.json()
     console.log(response)
-    // for(let data in jsonData){
-    //     result += `
-    //     <div>${data.article_id}</div>
-    //     `
-    // }
-    // resultDiv.innerHTML = result
+    for(let data of jsonData.results){
+        result += `
+        <div class="card col-sm-6" style="width: 18rem;">
+            <img src=${data.image_url} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.title}</h5>
+                <p class="card-text">${data.description}</p>
+                <a href=${data.link} class="btn btn-primary">기사보기</a>
+            </div>
+        </div>
+        `
+    }
+    resultDiv.innerHTML = result
 }
