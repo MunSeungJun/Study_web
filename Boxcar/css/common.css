@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Hi Melody", serif;
+}
+.container{
+    min-height: 600px;
+}
+
+/* header */
+
+.coupon{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 5%;
+    top: 1%;
+}
+.header-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-15%);
+}
+input::placeholder{
+    color: black;
+}
+select, input{
+    outline: none;
+}
+
+/* main */
