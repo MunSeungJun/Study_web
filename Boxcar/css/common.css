@@ -24,9 +24,9 @@ body{
 }
 /* side bar */
 #side_bar{
-    right: -20rem;
+    right: -40rem;
     top: 0;
-    width: 11rem;
+    width: 20%;
     height: 100vh;
     z-index: 9999;
     background-color: white;
@@ -81,6 +81,10 @@ select, input{
     top: 5%;
     left: 2%;
 }
+.car_img_wrap img{
+    width: 400px;
+    height: 210px;
+}
 .bookmark{
     top: 5%;
     right: 2%;
@@ -91,5 +95,17 @@ select, input{
     color: white;
 }
 .popular_car_list_wrap{
-    max-width: 1320px;
+    position: relative;
+    width: 1320px;
+    height: 412px;
+    overflow: hidden;
+    
+}
+.popular_car_list{
+    position: absolute;
+    max-width: 5328px;
+    left: 0;
+}
+.popular_car_item{
+    min-width: 318px
 }
